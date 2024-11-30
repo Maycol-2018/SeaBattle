@@ -1,0 +1,19 @@
+.borderPane{
+    -fx-background-image: url('../images/background-warship.png');
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+.buttons{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: #000000;
+    -fx-text-fill: #fff;
+}
+
+.buttons:hover{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+}
+
+
