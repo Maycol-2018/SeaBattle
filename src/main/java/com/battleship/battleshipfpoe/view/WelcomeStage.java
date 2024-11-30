@@ -18,8 +18,6 @@ public class WelcomeStage extends Stage {
 
     public WelcomeStage() {
         super();
-        // Obtener los límites visibles de la pantalla
-        Rectangle2D visualBounds = Screen.getPrimary().getVisualBounds();
 
         FXMLLoader loader = new FXMLLoader(
                 getClass().getResource("/com/battleship/battleshipfpoe/welcome-view.fxml"));
@@ -29,11 +27,7 @@ public class WelcomeStage extends Stage {
         } catch (IOException e){
             e.printStackTrace();
         }
-        Scene scene = new Scene(root, visualBounds.getWidth(), visualBounds.getHeight());
-        setX(visualBounds.getMinX());
-        setY(visualBounds.getMinY());
-        setWidth(visualBounds.getWidth());
-        setHeight(visualBounds.getHeight());
+        Scene scene = new Scene(root);
 
         setScene(scene);
 
